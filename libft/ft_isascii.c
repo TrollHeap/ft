@@ -1,7 +1,7 @@
 /**
  * ft_isascii - Checks if a given integer represents a valid ASCII character.
  *
- * @value: The integer value to check. This is typically the ASCII value of a character.
+ * @c: The integer value to check. This is typically the ASCII value of a character.
  *
  * Description:
  * This function determines whether the input value corresponds to a valid ASCII character.
@@ -12,7 +12,7 @@
  * Returns 1 (true) if the value is a valid ASCII character.
  * Returns 0 (false) otherwise.
  */
-int ft_isascii(int value)
+int ft_isascii(int c)
 {
-    return (value >= 0 && value <= 0177);
+	return (c >= 0 && c <= 0177);
 }

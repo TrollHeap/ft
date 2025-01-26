@@ -3,7 +3,7 @@
 /**
  * ft_isalnum - Checks if a given integer represents an alphanumeric character.
  *
- * @value: The integer value to check. This is typically the ASCII value of a
+ * @c: The integer value to check. This is typically the ASCII value of a
  * character.
  *
  * Description:
@@ -15,7 +15,7 @@
  * Returns 1 (true) if the value is an alphanumeric character.
  * Returns 0 (false) otherwise.
  */
-int ft_isalnum(int value)
+int ft_isalnum(int c)
 {
-	return (ft_isalpha(value) || ft_isdigit(value));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }

@@ -10,9 +10,10 @@
  * classification and other common tasks.
  */
 
-int ft_isalpha(int value);
-int ft_isdigit(int value);
-int ft_isalnum(int value);
-int ft_isascii(int value);
+int ft_isalpha(int c);
+int ft_isdigit(int c);
+int ft_isalnum(int c);
+int ft_isascii(int c);
+int ft_isprint(int c);
 
 #endif
