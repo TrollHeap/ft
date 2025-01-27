@@ -1,5 +1,4 @@
 #include "libft.h"
-
 /**
  * ft_strrchr - Locates the last occurrence of a character in a string.
  *
@@ -16,7 +15,6 @@
  * A pointer to the last occurrence of `c` in `s`.
  * NULL if `c` is not found in `s`.
  */
-
 char *ft_strrchr(const char *s, int c)
 {
 	char *last_occurrence = NULL;

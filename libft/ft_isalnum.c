@@ -1,5 +1,4 @@
 #include "libft.h"
-
 /**
  * ft_isalnum - Checks if a given integer represents an alphanumeric character.
  *

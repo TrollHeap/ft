@@ -1,5 +1,4 @@
 #include "libft.h"
-
 /**
  * ft_strlen - Calculates the length of a string.
  *

@@ -1,5 +1,4 @@
 #include "libft.h"
-
 /**
  * ft_strncmp - Compares up to `n` characters of two strings.
  *
