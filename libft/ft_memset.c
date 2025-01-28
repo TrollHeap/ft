@@ -17,16 +17,11 @@
  */
 void *ft_memset(void *b, int c, size_t len)
 {
-	unsigned char *p;
-	unsigned char  uc;
-
-	p = (unsigned char *) b;
-	uc = (unsigned char) c;
+	unsigned char *b1 = (unsigned char *) b;
 
 	while (len--)
 	{
-		*p++ = uc;
+		*b1++ = (unsigned char) c;
 	}
-
-	return (b);
+	return b;
 }
