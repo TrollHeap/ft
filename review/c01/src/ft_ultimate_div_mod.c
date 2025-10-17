@@ -1,8 +1,22 @@
-#include <unistd.h>
+#include <stdio.h>
 
-/* ft_ultimate_div_mod — exercice de la piscine 42 (c01) */
-
-void ft_ultimate_div_mod(void)
+void ft_ultimate_div_mod(int *a, int *b)
 {
-    write(1, "ft_ultimate_div_mod\n", 20);
+	int div;
+	int mod;
+
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
+}
+
+int main(void)
+{
+	int x = 13;
+	int y = 5;
+
+	ft_ultimate_div_mod(&x, &y);
+	printf("div = %d, mod = %d\n", x, y);
+	return (0);
 }

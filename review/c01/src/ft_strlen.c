@@ -1,8 +1,21 @@
+#include <stdio.h>
 #include <unistd.h>
 
-/* ft_strlen — exercice de la piscine 42 (c01) */
-
-void ft_strlen(void)
+int ft_strlen(char *str)
 {
-    write(1, "ft_strlen\n", 10);
+	int n;
+	n = 0;
+
+	while (str[n] != '\0')
+	{
+		n++;
+	}
+	return n;
+}
+
+int main()
+{
+	char str[] = "Hello, World!";
+	printf("%d", ft_strlen(str));
+	return 0;
 }
