@@ -1,8 +1,20 @@
 #include <unistd.h>
 
-/* ft_print_alphabet — exercice de la piscine 42 (c00) */
-
 void ft_print_alphabet(void)
 {
-    write(1, "ft_print_alphabet\n", 18);
+	char a, z;
+	a = 'a';
+	z = 'z';
+
+	while (a <= z)
+	{
+		write(1, &a, 1);
+		a++;
+	}
+}
+
+int main()
+{
+	ft_print_alphabet();
+	return 0;
 }

@@ -1,8 +1,21 @@
 #include <unistd.h>
 
-/* ft_is_negative — exercice de la piscine 42 (c00) */
-
-void ft_is_negative(void)
+void ft_is_negative(int n)
 {
-    write(1, "ft_is_negative\n", 15);
+	if (n >= 0)
+	{
+		write(1, "P", 1);
+	}
+	else
+	{
+		write(1, "N", 1);
+	}
+}
+
+int main()
+{
+	int n;
+	n = 2;
+	ft_is_negative(n);
+	return 0;
 }

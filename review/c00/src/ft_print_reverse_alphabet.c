@@ -1,8 +1,20 @@
 #include <unistd.h>
 
-/* ft_print_reverse_alphabet — exercice de la piscine 42 (c00) */
-
 void ft_print_reverse_alphabet(void)
 {
-    write(1, "ft_print_reverse_alphabet\n", 26);
+	char z, a;
+	z = 'z';
+	a = 'a';
+
+	while (a < z)
+	{
+		write(1, &z, 1);
+		z--;
+	}
+}
+
+int main()
+{
+	ft_print_reverse_alphabet();
+	return 0;
 }
