@@ -1,8 +1,14 @@
 #include <unistd.h>
 
-/* ft_ft — exercice de la piscine 42 (c01) */
-
-void ft_ft(void)
+void ft_ft(int *nbr)
 {
-    write(1, "ft_ft\n", 6);
+	*nbr = 42;
+}
+
+int main(void)
+{
+	int x;
+	x = 0;
+	ft_ft(&x);
+	return (0);
 }

@@ -1,8 +1,20 @@
 #include <unistd.h>
 
-/* ft_swap — exercice de la piscine 42 (c01) */
-
-void ft_swap(void)
+void ft_swap(int *a, int *b)
 {
-    write(1, "ft_swap\n", 8);
+	int tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
+
+int main(void)
+{
+	int x;
+	int y;
+
+	x = 5;
+	y = 10;
+	ft_swap(&x, &y);
+	return (0);
 }
