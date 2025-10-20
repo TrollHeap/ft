@@ -1,8 +1,22 @@
+#include <stdio.h>
 #include <unistd.h>
 
 /* ft_strcpy — exercice de la piscine 42 (c02) */
 
-void ft_strcpy(void)
+void ft_strcpy(char *dest, char *src)
 {
-    write(1, "ft_strcpy\n", 10);
+	while (src && *src != '\0')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
+}
+
+int main(void)
+{
+	char src[] = "Salut";
+	char dest[10];
+	ft_strcpy(dest, src);
+	printf("%s\n", dest);
 }
